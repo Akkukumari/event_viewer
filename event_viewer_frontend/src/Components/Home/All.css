@@ -1,0 +1,115 @@
+.home{
+    width: 100%;
+    height: 1200px;
+    background-color: black;
+}
+.firsttext{
+    color: yellow;
+    font-size: 120px;
+    font-weight: 650;
+    padding-top: 50px;
+}
+.secondtext{
+    color: white;
+    font-size: 110px;
+    font-weight: 600;
+}
+.secpart{
+    width: 70%;
+    margin: auto;
+    height: 700px;
+    /* border: 10px solid red; */
+    display:  flex;
+    gap: 100px;
+}
+.righsecpart{
+    height: 740px;
+    width: 40%;
+    border: 10px solid rgb(69, 47, 241);
+}
+.firsttext1{
+    color: white;
+    width: 70%;
+    margin: auto;
+    font-size: 60px;
+    /* text-align: center; */
+    margin-top: 240px;
+    font-weight: 600;
+    text-align: left;
+}
+.sectext2{
+    color: white;
+    width: 70%;
+    margin: auto;
+   font-size: 20px;
+    margin-top: 20px;
+    text-align: left;
+}
+.citybody{
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    /* border: 1px solid red; */
+    margin-top: 100px;
+}
+#TastyTreatsHub {
+    text-align: center;
+    width: 100%;
+     font-size: 45px;
+     font-weight: 700;
+     margin-bottom: 20px;
+     margin-top: 90px;
+     color: white
+
+  }
+  .hotDeals{
+    width: 80%;
+    height: 460px;
+    margin: auto;
+    margin-bottom: 40px;
+    /* border: 1px solid rgb(0, 255, 13); */
+    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+  }
+  .container{
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    gap: 12px;
+    /* border: 10px solid rgb(8, 0, 255); */
+    /* border: 1px solid rgba(0, 72, 255, 0.694); */
+  }
+  .imgbody{
+    height: 450px;
+    box-shadow: rgba(253, 253, 253, 0.68) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+   
+  }
+  .img1{
+    border-radius: 12px;
+    width: 100%;
+    height: 400px;
+  }
+  .imgtext{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-top: 15px;
+  }
+  .login-background{
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCCVLgBhM28nCTQELA4m8N8BQLtJ6GxcL2ZQ&usqp=CAU") no-repeat ;
+    height: 100vh;
+    background-size: cover;
+}
+
+/* .signup-background{
+   background-color: black;
+} */
+
+.signup-background{
+   background: url("https://preview.redd.it/8fhc263msei41.jpg?width=1224&format=pjpg&auto=webp&s=1e3a16a4d56af2e91dc23f33e854f6dc64a8190b") no-repeat ;
+   height: 100vh;
+   background-size: cover;
+}
+
+
+

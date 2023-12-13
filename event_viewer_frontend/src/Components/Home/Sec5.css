@@ -1,0 +1,95 @@
+.container{
+    background-color: black;
+    height: 100vh;
+}
+.container-1{
+    height: 100%;
+    /* border: 1px solid white; */
+    padding: 10%;
+    display: flex;
+    width: 100%;
+}
+.box{
+    /* padding: 10%; */
+    margin: 2%;
+    height: 34rem;
+    
+}
+.box-1{
+    /* background-color: aliceblue; */
+    width: 30%;
+    /* border: solid white; */
+    background-color: rgb(250, 95, 242);
+    background-image: url(../../../Assests/Images/virtual-conference-35.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.box-2{
+    width: 30%;
+    /* border: solid white; */
+    background-image: url(../../../Assests/Images/virtual-conference-33.png);
+    background-color: rgb(90, 55, 245);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.box-3{
+    width:30%;
+    background-image: url(../../../Assests/Images/virtual-conference-34.png);
+    /* border: solid white; */
+    background-color: yellow;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+@import url(https://db.onlinewebfonts.com/c/7a06c1d0b51e2a4a709d44b136762a93?family=Geom+Graphic+W01+Light);
+.row-2, .row-3, .row-4{
+    font-family:"Geom Graphic W01 Light";
+}
+.row-1, .row-3, .row-4{
+    padding-top: 2rem;
+    padding-left: 3rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.row-2{
+    /* font-family:"Geom Graphic W01 Light"; */
+    font-size: 5rem;
+    text-align: left;
+    padding-left: 3rem;
+}
+.row-5{
+    padding-right: 20%;
+    padding-top: 20%;
+}
+.row-5 a{
+    padding: 7%;
+    /* padding-left: 80px; */
+    background-color: black;
+    color: #fff;
+    /* height: 3.5rem; */
+    font-size: large;
+    font-weight:500;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    display: inline-block;
+    position: relative;
+}
+.row-5 a:after{
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    /* top: 14px; */
+    right: -20px;
+    transition: 0.5s;
+}  
+.row-5 a:hover{
+    padding-right: 30px;
+    padding-left:8px;
+  }
+  
+.row-5 a:hover:after {
+    opacity: 1;
+    right: 10px;
+  }

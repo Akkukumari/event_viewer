@@ -1,0 +1,11 @@
+.container-box-footer{
+    background-color: black;
+    height: 7vh;
+    color: grey;
+    text-align: right;
+    padding-right: 2%;
+    padding-top: 1%;
+  }
+  .container-box-footer font{
+    font-style: oblique;
+  }

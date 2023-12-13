@@ -1,0 +1,213 @@
+.container-box-second-footer{
+    /* background-image: url(../images/second-footer-background-image.png); */
+    background-image: url(http://ali.sandbox.etdevs.com/virtual-conference/wp-content/uploads/sites/21/2021/04/virtual-conference-07.png);
+    /* width: 100rem; */
+    /* margin-top: 50px; */
+    position: relative;
+    background-position: 50%;
+    background-size: 100%;
+    background-size: cover;
+    height: 100vw;
+    height: 100vh;
+    background-color: #6700FF!important;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-size: cover;
+    /* @media only screen and (min-width: 1350px){
+        padding: 54px 0;
+    };
+    @media (min-width: 981px) {
+        padding: 4% 0;
+    } */
+  }
+  .footer-row {
+    width: 80%;
+    height: 80%;
+    /* max-width: 1080px; */
+    margin: auto;
+    position: relative;
+    display: flex;
+    /* justify-content: space-around;
+    flex-wrap: wrap; */
+    padding-top: 0%;
+  }
+  .footer-column {
+    /* float: left; */
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+    @media screen and (max-width: 1200px){
+        height: 40%;
+    }
+    @media screen and (max-width: 600px){
+        height: 20%;
+    }
+    /* z-index: 2; */
+    /* min-height: 1px; */
+  }
+  .footer-column-1{
+    /* border: solid red; */
+    float: left;
+    width: 50%;
+  }
+  .col_module {
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+  }
+  ul {
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0; */
+  }
+  @import url(https://db.onlinewebfonts.com/c/7a06c1d0b51e2a4a709d44b136762a93?family=Geom+Graphic+W01+Light);
+  .col1{
+    /* border: solid black; */
+    background-color: black;
+    color: white;
+    height: 18rem ;
+    font-family: "Geom Graphic W01 Light";
+    font-size: 4.5rem;
+    text-align: left;
+    padding-top: 8%;
+    padding-left: 10%;
+  }
+  .col1:hover{
+    background-color: rgb(250, 95, 242);
+    color: black;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+  
+  
+  .col2{
+    color: #fff;
+    font-size: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    padding-top: 7%;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+  .col3{
+    display: flex;
+    font-size: 30px;
+    line-height: 10px;
+    padding-top: 5%;
+    /* height: 64px; */
+    /* width: 64px; */
+    margin: auto;
+    /* border: 10px  solid red; */
+    /* width: 2%; */
+    /* justify-content: space-between; */
+  }
+  .col3 icon{
+    padding: 5rem;
+  }
+  .footer-column, .footer-row, .footer-row-inner {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  
+  .footer-column-2{
+    /* border: solid red; */
+    width: 50%;
+    background-color: #fff;
+    height: 100%;
+    /* @media only screen and (min-width: 1350px){
+         padding: 54px 0;
+        display: flex;
+        flex-direction: column;
+    };
+    @media (min-width: 981px) {
+        padding: 4% 0;
+    } */
+  }
+  
+  
+  .column-2-row-1{
+    /* border: solid red; */
+    display: flex;
+    height: 60%;
+  }
+  
+  .column-2-row-1-col-1{
+    /* border: solid red; */
+    font-family: "Geom Graphic W01 Light";
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-top: 35%;
+    /* padding-bottom: 7%; */
+    text-align: left;
+    width: 60%;
+    letter-spacing: 0.1rem;
+  }
+  .column-2-row-1-col-2{
+    /* border: solid red; */
+    width: 40%;
+  }
+  .column-2-row-1-col-2 img{
+    height: 100%;
+    width: 100%;
+  }
+  .column-2-row-2{
+    /* border: solid black; */
+    height: 13.5rem;
+  }
+  .column-2-row-2-form{
+    /* display: flex; */
+    padding: 10%;
+    /* width: 100%;
+    gap: 20px; */
+    /* border: 1px solid red; */
+  }
+  .column-2-row-2-form ::placeholder{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 5%;
+  }
+  .column-2-row-2 input{
+    border: 1.5px solid red;
+    width: 100%;
+    /* padding: 10%; */
+    height: 3.5rem;
+  
+  }
+  .column-2-row-2 button{
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    /* padding: 0%; */
+    height: 3.5rem;
+    font-size: large;
+    font-weight:500;
+    letter-spacing: 0.2rem;
+    transition: all 0.5s;
+    cursor: pointer;
+  /*   margin: 36px; */
+   box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+   display: inline-block;
+   position: relative;
+  }
+  .column-2-row-2 button:after{
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }  
+  .column-2-row-2 button:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .column-2-row-2 button:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
