@@ -4,7 +4,7 @@ import "./Sec5.css";
 
 export default function Section1() {
   return (
-    <div className='container'>
+    <div className='container-sec5'>
         <div className='container-1'>
         <div className='box box-1'>
             <div className='row-1'>July 12</div>
