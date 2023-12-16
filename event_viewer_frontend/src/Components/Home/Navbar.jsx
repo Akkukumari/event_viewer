@@ -26,76 +26,160 @@ import {
 } from '@chakra-ui/icons'
 
 import { Link as RouterLink } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 export default function Navbar() {
-  const { isOpen, onToggle } = useDisclosure()
+  const { isOpen, onToggle } = useDisclosure();
+  const { user, loginWithRedirect,logout, isAuthenticated } = useAuth0();
 
+  function notify(){
+    toast('Welcome back  '+user.name, {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+  }
+  function route(){
+    <RouterLink to="/adminpage"/>
+  }
   return (
     <>
-  
-    <Box  backgroundColor={"white"}>
-      <Flex 
-       color={useColorModeValue('black.800', 'black')}
-        minH={'85px'}
-        py={{ base: 2 }}
-        px={{ base: 4 }}
-        borderBottom={1}
-        borderStyle={'solid'}
-        borderColor={useColorModeValue('white', 'white')}
-        align={'center'}>
-        <Flex 
-          flex={{ base: 1, md: 'auto' }}
-          ml={{ base: -2 }}
-          display={{ base: 'flex', md: 'none' }}>
-          <IconButton
-            onClick={onToggle}
-            icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
-            variant={'ghost'}
-            aria-label={'Toggle Navigation'}
-          />
-        </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }} >
-          
-{/* <Image src="assets/Images/logo.png"/> */}
-
-
-          <Flex display={{ base: 'none', md: 'flex' }} ml={10} >
-            <DesktopNav />
+    <img/>
+      <Box backgroundColor={"white"}>
+        <Flex
+          color={useColorModeValue("black.800", "black")}
+          minH={"85px"}
+          py={{ base: 2 }}
+          px={{ base: 4 }}
+          borderBottom={1}
+          borderStyle={"solid"}
+          borderColor={useColorModeValue("white", "white")}
+          align={"center"}
+        >
+          <Flex
+            flex={{ base: 1, md: "auto" }}
+            ml={{ base: -2 }}
+            display={{ base: "flex", md: "none" }}
+          >
+            <IconButton
+              onClick={onToggle}
+              icon={
+                isOpen ? (
+                  <CloseIcon w={3} h={3} />
+                ) : (
+                  <HamburgerIcon w={5} h={5} />
+                )
+              }
+              variant={"ghost"}
+              aria-label={"Toggle Navigation"}
+            />
           </Flex>
+          <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+            {/* <Image src="../../../Assests/Images/logo-navbar.png" alt="sup?"/> */}
+            {/* <Image src="event_viewer_frontend\Assests\Images\logo-navbar.png" alt="sup?"/> */}
+            <Image src="" alt="sup?"/>
+            
+
+            <Flex display={{ base: "none", md: "flex" }} ml={10}>
+              <DesktopNav />
+            </Flex>
+          </Flex>
+          {isAuthenticated ? (
+            (
+            notify(),
+            // <RouterLink to="/adminpage"/>,
+            // route(),
+            (
+              <Stack
+                flex={{ base: 1, md: 0 }}
+                justify={"flex-end"}
+                direction={"row"}
+                spacing={6}
+              >
+                {/* <RouterLink to="/signup"> */}
+                <Button
+                  as={"a"}
+                  display={{ base: "none", md: "inline-flex" }}
+                  fontSize={"sm"}
+                  fontWeight={600}
+                  color={"white"}
+                  // bg={'pink.400'}
+                  bg={"black"}
+                  w={"100px"}
+                  href={"#"}
+                  _hover={{
+                    bg: "grey.800",
+                  }}
+                  onClick={() =>
+                    logout({
+                      logoutParams: { returnTo: window.location.origin },
+                    })
+                  }
+                >
+                  Log out
+                </Button>
+                {/* </RouterLink> */}
+              </Stack>
+            ))
+          ) : (
+            <Stack
+              flex={{ base: 1, md: 0 }}
+              justify={"flex-end"}
+              direction={"row"}
+              spacing={6}
+            >
+              {/* <RouterLink to="/adminpage"> */}
+              <Button
+                as={"a"}
+                display={{ base: "none", md: "inline-flex" }}
+                fontSize={"sm"}
+                fontWeight={600}
+                color={"white"}
+                // bg={'pink.400'}
+                bg={"black"}
+                w={"100px"}
+                href={"#"}
+                _hover={{
+                  bg: "grey.800",
+                }}
+                onClick={() => loginWithRedirect()}
+                // onClick={notify}
+              >
+                Login
+              </Button>
+              {/* </RouterLink> */}
+            </Stack>
+          )}
         </Flex>
 
-        <Stack
-          flex={{ base: 1, md: 0 }}
-          justify={'flex-end'}
-          direction={'row'}
-          spacing={6}>
-             <RouterLink to="/login">
-                  <Button
-            as={'a'}
-            display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
-            fontWeight={600}
-            color={'white'}
-            // bg={'pink.400'}
-            bg={'black'}
-            w={"100px"}
-            href={'#'}
-            _hover={{
-              bg: 'grey.800',
-            }}>
-           Login
-          </Button>
-          </RouterLink>
-        </Stack>
-      </Flex>
-
-      <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
-      </Collapse>
-    </Box>
+        <Collapse in={isOpen} animateOpacity>
+          <MobileNav />
+        </Collapse>
+      </Box>
+      <ToastContainer
+        theme="dark"
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        // theme="dark"
+      />
     </>
-  )
+  );
 }
 
 const DesktopNav = () => {

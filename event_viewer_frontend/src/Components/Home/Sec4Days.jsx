@@ -32,9 +32,9 @@ export default function SecondFooter() {
         </div>
         <div className='column-2-row-2'>
         <form className='column-2-row-2-form'>
-          <label>
+          {/* <label> */}
             <input type="email"  name="name" placeholder="Email" style={{marginBottom:'2%'}}/>
-          </label>
+          {/* </label> */}
           <button type="submit" value="Subscribe">Subscribe</button>
         </form>
         </div>
