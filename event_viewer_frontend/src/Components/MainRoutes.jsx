@@ -8,6 +8,8 @@ import Signup from "../Pages/Signup";
 import Sec4Days from "../Components/Home/Sec4Days";
 import Footer from "../Components/Home/Footer";
 import Sec5 from "../Components/Home/Sec5";
+import Kolkata from "../Components/Home/Kolkata";
+import KolkataDetail from "../Components/Home/KolkataDetail";
 
 export default function  MainRoutes () {
   return (
@@ -21,6 +23,8 @@ export default function  MainRoutes () {
       <Route path="/sec4days" element={<Sec4Days />} />
       <Route path="/footer" element={<Footer />} />
       <Route path="/sec5" element={<Sec5 />} />
+      <Route path="/kolkata" element={<Kolkata/>} />
+      <Route path="/kolkatadetail" element={<KolkataDetail/>} />
        </Routes>                                                   
   );
 };

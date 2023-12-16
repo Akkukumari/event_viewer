@@ -68,7 +68,6 @@
     margin: auto;
     margin-bottom: 40px;
     /* border: 1px solid rgb(0, 255, 13); */
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
   }
   .container{
     width: 100%;
@@ -95,21 +94,248 @@
     color: white;
     margin-top: 15px;
   }
-  .login-background{
-    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCCVLgBhM28nCTQELA4m8N8BQLtJ6GxcL2ZQ&usqp=CAU") no-repeat ;
-    height: 100vh;
-    background-size: cover;
+  .outerbody{
+    width: 100%;
+    background-color: black;
+  }
+.product-parent {
+  width: 75%;
+  margin: auto;
+  border: 10px solid rgb(183, 206, 220);
+  background-color: black;
+  /* padding: 50px; */
+
+}
+.filtericon{
+  width: 80%;
+  margin: auto;
+  height: 140px;
+  margin-bottom: 40px;
+  display: flex;
+  gap: 100px;
+  /* margin-left: 20px; */
+}
+.icon1{
+  /* width: 30%; */
+  height: 100px;
+  /* margin-left: 20px; */
+  /* border: 1px solid rgb(217, 255, 0); */
 }
 
-/* .signup-background{
-   background-color: black;
+.micimg{
+  border-radius: 50px;
+}
+.icontext{
+  color: white;
+  margin-left: 20px;
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.first-heading {
+  font-size: 38px;
+  font-weight: 600;
+  text-align: left;
+  color:white;
+  padding-top: 50px;
+  /* margin-left: 60px; */
+}
+.second-heading {
+  padding-top: 15px;
+  font-size: 20px;
+  color: gray;
+  text-align: left;
+  padding-bottom: 25px;
+  /* margin-left: 60px; */
+  margin-right: 100px;
+}
+.firsttop{
+  width: 60%;
+}
+.filterright{
+  width: 25%;
+  height: 100px;
+}
+.filterinternal{
+margin-top: 70px;
+height: 100px;
+margin-right: 1px;
+  border: 1px solid rgb(183, 206, 220);
+}
+.filterby{
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.filterbtn{
+  display: flex;
+}
+.input{
+  /* border:1px solid rgb(17, 221, 37) */
+   /* margin-top: 30px; */
+}
+.option{
+  text-align: left;
+  font-weight: 500;
+  font-size: 18px;
+    border:1px solid rgb(140, 133, 133);
+    width: 70%;
+    height: 40px;
+    border-radius: 8px;
+}
+.inputinside{
+  /* margin-top: 10px; */
+}
+/* .product-body {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  border: 1px solid blue;
+} */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
+  height: fit-content;
+  border: 1px solid green;
+}
+.itemBody {
+  /* border: 1px solid rgb(38, 14, 194); */
+  border-radius: 15px;
+  padding: 10px 5px;
+  box-shadow: rgb(239, 233, 233) 0px 2px 8px 0px;
+  width: 380px;
+  height: 420px;
+  /* border: 10px solid rgb(252, 10, 195); */
+}
+.productImg {
+  width: 200px;
+  height: 250px;
+  margin: auto;
+}
+.name {
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+.detail {
+  font-size: 14px;
+  color: gray;
+}
+.about {
+  font-size: 14px;
+  color: gray;
+  padding-top: 12px;
+}
+.price {
+  padding-top: 12px;
+  color: rgba(163, 8, 80, 0.957);
+  font-size: 13px;
+}
+.mainbodytop{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  /* background-color: black; */
+}
+
+.tutorfirst{
+  width: 70%;
+  height: 320px;
+  /* border-radius: 16px; */
+  /* border:1px solid rgb(26, 86, 206); */
+}
+.tutorsec{
+ width: 50%;
+ background-color: white;
+}
+
+.icon{
+  /* width: 40%; */
+  /* margin-top: 2px; */
+  display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   gap: 2px;
+  /* border: 1px solid rgb(211, 233, 11); */
+     }
+.iconn{
+  margin-right: 20px;
+      margin-right: 80px; 
+      border: 1px solid red;
+     }
+.price{
+  padding: 5px;
+  margin-left: 110px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+   border: 1px solid rgb(86, 84, 84);
+ }
+ .tutorsecond{
+  /* height: 40px; */
+  text-align: left;
+  font-weight: 600;
+  font-size: 17px;
+  margin-left: 10px;
+  /* margin-top: 2px; */
+  /* border:1px solid rgb(26, 86, 206); */
+}
+.date{
+  text-align: left;
+  font-weight: 600;
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+.timee{
+  /* height: 40px; */
+  text-align: left;
+  font-weight: 600;
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+.filterprice{
+display: flex;
+width: 80%;
+height: 250px;
+/* border: 1px solid red; */
+margin: auto;
+}
+.upper-part{
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-size: 26px;
+  padding-top: 30px;
+  text-decoration: underline;
+}
+.smallImg {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.smallImg img {
+  width: 100px;
+}
+.prodetial{
+  width: 100%;
+  background-color: black;
+}
+/* .productImages{
+  border: 1 px solid red;
 } */
 
-.signup-background{
-   background: url("https://preview.redd.it/8fhc263msei41.jpg?width=1224&format=pjpg&auto=webp&s=1e3a16a4d56af2e91dc23f33e854f6dc64a8190b") no-repeat ;
-   height: 100vh;
-   background-size: cover;
+
+
+
+
+
+
+.productImages img {
+  border: 1px solid rgb(234, 228, 228);
 }
-
-
-

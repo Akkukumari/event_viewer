@@ -1,5 +1,6 @@
 import React from 'react'
 import "./All.css";
+import Kokata from "../Home/Kolkata";
 
 export default function () {
   return (
@@ -11,7 +12,7 @@ export default function () {
     <section className="hotDeals" >
       <div className="container">
           <div className='imgbody' >
-              <a href="./">
+              <a href="/kolkata">
                 <img  className='img1'src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-rtT4fwBojHPYVXOrFGJ_oOYhHr8oUvxh9A&usqp=CAU"/>
                 </a>
                 <h5 className="imgtext">Kolkata</h5>
